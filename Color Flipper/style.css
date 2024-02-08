@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #351c75;
+}
+
+form {
+    margin-top: 10px;
+}
+
+form input {
+    width: 400px;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    font-size: 18px;
+}
+
+form input::placeholder {
+    font-size: 18px;
+}
+
+form button {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: .6s all ease-in-out;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: orange;
+}
+
+.tasks {
+    margin-top: 20px;
+    width: 500px;
+}
+
+.tasks ol li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 2px 0px;
+}
+
+.tasks ol li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tasks ol li span i {
+    padding-left: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .6s all ease-in-out;
+}
+
+.tasks ol li span i:hover {
+    color: orange;
+}
